@@ -1,3 +1,4 @@
+name: toms-corne-wireless-eink
 build:
   settings:
     board_root: .
