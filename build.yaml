@@ -20,7 +20,10 @@
 # 
 ---
 include:
-  - board: nice_nano_v2
-    shield: corne_left nice_view_adapter nice_view_gem
-  - board: nice_nano_v2
-    shield: corne_right nice_view_adapter nice_view_gem
+  - board: corne_min_left
+    shield: rgbled_adapter nice_view_adapter nice_view_gem
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y
+  - board: corne_min_right
+    shield: rgbled_adapter nice_view_adapter nice_view_gem
+    cmake-args: -DCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y
