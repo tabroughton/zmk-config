@@ -36,10 +36,6 @@ nice_view_spi: &spi0 {
     pinctrl-names = "default", "sleep";
 
     /* nice!view recommended CS pin: P0.06 */
-    cs-gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
+    cs-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
 };
 
-
-&nice_view {
-    spi-max-frequency = <250000>;
-};
