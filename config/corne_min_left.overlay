@@ -35,7 +35,7 @@ nice_view_spi: &spi1 {
     pinctrl-1 = <&nice_view_spi_sleep>;
     pinctrl-names = "default", "sleep";
 
-    /* nice!view recommended CS pin: P0.06 */
-    cs-gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
+    // cs pin traced to pin D8, 1.04
+    cs-gpios = <&gpio1 4 GPIO_ACTIVE_LOW>;
 };
 
