@@ -1,0 +1,4 @@
+&nice_view_spi {
+    /* CHANGE THIS PIN to match your actual CS wiring */
+    cs-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
+};
