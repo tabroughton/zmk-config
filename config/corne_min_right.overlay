@@ -27,7 +27,7 @@
  * We point it at spi0 (SPIM0). If your board already uses spi0 for something,
  * switch this to &spi1 instead.
  */
-nice_view_spi: &spi0 {
+nice_view_spi: &spi1 {
     status = "okay";
     compatible = "nordic,nrf-spim";
 
@@ -36,5 +36,5 @@ nice_view_spi: &spi0 {
     pinctrl-names = "default", "sleep";
 
     /* nice!view recommended CS pin: P0.06 */
-    cs-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
+    cs-gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
 };
